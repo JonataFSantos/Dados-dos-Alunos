@@ -7,4 +7,14 @@
     <string name="AddNewsStudent">Adicionar novo estudante</string>
     <string name="ume_leonardo_nunes">UME Leonardo Nunes</string>
     <string name="iconTheSchool">iconTheSchool</string>
+    <string name="three_contact">Terceiro Contato</string>
+    <string name="studentName">Nome do aluno</string>
+    <string name="send_data">Enviar Dados</string>
+    <string name="firstContact">Primeiro Contato</string>
+    <string name="second_contact">Segundo Contato</string>
+    <string name="ume_bernal">UME Bernal</string>
+    <string name="StudentData">Dados Dos Alunos</string>
+    <string name="leonardo">Leonardo</string>
+    <string name="year">Ano</string>
+    <string name="number">1º</string>
 </resources>

@@ -1,12 +1,9 @@
 package com.example.clicklistchangecolor
 
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.clicklistchangecolor.databinding.ActivityMainBinding
-import com.example.clicklistchangecolor.databinding.SetStudentInfoLayoutBinding
-import com.example.clicklistchangecolor.databinding.TestBinding
+
 
 class MainActivity : AppCompatActivity() {
 

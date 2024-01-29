@@ -4,93 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/imageActivityBackground">
+
 
     <View
-        android:id="@+id/view"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/titleApp"
-        app:layout_constraintEnd_toStartOf="@+id/titleApp"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/titleApp"
-        app:srcCompat="@drawable/baseline_school_24"
-        android:contentDescription="@string/iconTheSchool"/>
-
-
-    <TextView
-        android:id="@+id/titleApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ume_leonardo_nunes"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.615" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/viewBackGroundBottom"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/rv_user" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/addStudent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:background="@color/bottomBackGround"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <View
-        android:id="@+id/view2"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="50dp"
-        android:background="@color/lilac"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/StudentData"
+        android:textColor="@color/greenBlack"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonLeonardo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/outline_home_24"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnBernal"
+        app:layout_constraintHorizontal_bias="1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBackGroundBottom"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/descriptionLeonardoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/leonardo"
+        android:textColor="@color/greenBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLeonardo"
+        app:layout_constraintStart_toStartOf="@id/buttonLeonardo"
+        app:layout_constraintTop_toBottomOf="@id/buttonLeonardo" />
+
+    <ImageButton
+        android:id="@+id/imgBtnBernal"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/outline_home_24"
+        android:layout_marginTop="11dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleApp" />
+        app:layout_constraintStart_toEndOf="@+id/buttonLeonardo"
+        app:layout_constraintTop_toTopOf="@+id/viewBackGroundBottom" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/AddNewsStudent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:shapeAppearance="@style/Widget.Design.FloatingActionButton"
-        app:srcCompat="@drawable/baseline_add_24" />
+    <TextView
+        android:id="@+id/descriptionBernalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bernal"
+        android:textAlignment="center"
+        android:textColor="@color/greenBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgBtnBernal"
+        app:layout_constraintStart_toStartOf="@id/imgBtnBernal"
+        app:layout_constraintTop_toBottomOf="@id/imgBtnBernal" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="descriptionLeonardoButton" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

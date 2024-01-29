@@ -2,12 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="lilac">#7B5BF2</color>
-    <color name="lilacBlack">#09184D</color>
+    <color name="imageActivityBackground">#F8FAF0</color>
+    <color name="imageItemBackground">#09184D</color>
     <color name="titleBlack">#2F2E2E</color>
     <color name="grey">#808085</color>
     <color name="lilacLight">#D7CDFB</color>
-
+    <color name="bottomBackGround">#edefe5</color>
+    <color name="greenLight">#c1f0a4</color>
+    <color name="greenBlack">#072100</color>
 
 
 </resources>
+
