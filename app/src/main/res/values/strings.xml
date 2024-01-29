@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClickListChangeColor</string>
+    <string name="tvNameStudent">tvNameStudent</string>
+    <string name="tvTitleFirstContact">tvTitleFirstContact</string>
+    <string name="tvFirstContact">tvFirstContact</string>
+    <string name="AddStudent">Adicionar Aluno</string>
+    <string name="AddNewsStudent">Adicionar novo estudante</string>
+    <string name="ume_leonardo_nunes">UME Leonardo Nunes</string>
+    <string name="iconTheSchool">iconTheSchool</string>
+</resources>
