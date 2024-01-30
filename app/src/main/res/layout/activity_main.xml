@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/buttonLeonardo"
+        android:id="@+id/img_btn_leonardo"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -49,12 +49,13 @@
         android:text="@string/leonardo"
         android:textColor="@color/greenBlack"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/buttonLeonardo"
-        app:layout_constraintStart_toStartOf="@id/buttonLeonardo"
-        app:layout_constraintTop_toBottomOf="@id/buttonLeonardo" />
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_leonardo"
+        app:layout_constraintStart_toStartOf="@id/img_btn_leonardo"
+        app:layout_constraintTop_toBottomOf="@id/img_btn_leonardo" />
 
     <ImageButton
         android:id="@+id/imgBtnBernal"
+        android:contentDescription="Botão para acessar Lista dos alunos do Bernal."
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -62,7 +63,7 @@
         android:layout_marginTop="11dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonLeonardo"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_leonardo"
         app:layout_constraintTop_toTopOf="@+id/viewBackGroundBottom" />
 
     <TextView

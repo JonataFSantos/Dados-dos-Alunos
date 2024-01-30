@@ -1,5 +1,6 @@
 package com.example.clicklistchangecolor
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.clicklistchangecolor.databinding.ActivityMainBinding
@@ -14,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val studentName = mutableListOf<String>()
+        /*val studentName = mutableListOf<String>()
 
-        /*val studentAdapter = StudentAdapter(studentName)
+        val studentAdapter = StudentAdapter(studentName)
         binding.recyclerView.adapter = studentAdapter
         binding.imageButton.setOnClickListener {
             val newStudentName = binding.addStudentInList.text.toString()
@@ -35,6 +36,18 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.recyclerView.adapter = StudentAdapter(studentName)*/
+
+        binding.imgBtnBernal.setOnClickListener {
+            val intent = Intent(this, BernalListActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.imgBtnLeonardo.setOnClickListener{
+            val intent = Intent(this,LeonardoListActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
 
